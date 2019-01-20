@@ -1,12 +1,27 @@
+/* eslint-disable no-undef */
+
+//common js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import store from './store/store'
+import {Provider} from 'react-redux';
+import {BrowserRouter, HashRouter, Link, Route, Switch} from 'react-router-dom';
+//css
+import './index.scss';
+
+import 'antd-mobile/dist/antd-mobile.css';
+//fun
 import * as serviceWorker from './serviceWorker';
+//components
+import RouterConfig from './router/RouterConfig';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
+ReactDOM.render(
+    <Provider store={store}>
+        <BrowserRouter>
+            <RouterConfig />
+        </BrowserRouter>
+    </Provider>,
+// eslint-disable-next-line no-undef
+    document.getElementById('root'));
 serviceWorker.unregister();
