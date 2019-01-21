@@ -3,12 +3,13 @@ import {BrowserRouter, HashRouter, Link, Redirect, Route, Switch} from 'react-ro
 
 
 import Index from '../components/Index/Index';
+import CateIndex from '../components/Cate/CateIndex';
 
 const RouterConfig = () => (
     <Switch>
         <Redirect exact from="/" to="/index"/>
         <Route exact path='/index' component={Index} />
-        {/*<Route exact path='/cate' component={CateIndex} />*/}
+        <Route exact path='/cate' component={CateIndex} />
         {/*<Route exact path='/cateProList/:cateId/:cateName' component={CateProHead} />*/}
         {/*<Route exact path='/item/:productId' component={ItemIndex} />*/}
         {/*<Route exact path='/9' component={NineIndex}/>*/}

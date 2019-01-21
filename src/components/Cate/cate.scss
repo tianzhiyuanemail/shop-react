@@ -1,0 +1,155 @@
+.CateIndex{
+    .am-navbar {
+        height: 40px;
+        background-color: #fb5d84;
+    }
+
+
+    .row,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,aside,figure,figcaption,blockquote,th,td,a
+    {
+        margin: 0;
+        padding: 0;
+        outline:none;
+        font-family:"Microsoft YaHei";
+    }
+    input[type=radio]{margin: 0;}
+    h1,h2,h3,h4,h5,h6,label {
+        font-weight: normal;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    /*strong{font-weight: normal;}*/
+    body {
+        background: #ececec;
+    }
+    .font21 {
+        font-size: .21rem;
+    }
+    .font17 {
+        font-size: .17rem;
+    }
+    .font19 {
+        font-size: .19rem;
+    }
+    .font23 {
+        font-size: .23rem;
+    }
+    .font24 {
+        font-size: .24rem;
+    }
+    .font25 {
+        font-size: .25rem;
+    }
+    .font26 {
+        font-size: .26rem;
+    }
+    .font28 {
+        font-size: .28rem;
+    }
+    .padding20 {
+        padding: 0 .2rem 0 .2rem
+    }
+    .fff {
+        background: #fff;
+    }
+    .color-a1 {
+        color: #a1a1a1;
+    }
+    .color-4d {
+        color: #4d4d4d;
+    }
+    /*category页面*/
+    .category .waitarea canvas{     /* 加载小圆圈 */
+        position: absolute;
+        left: 50%;
+        margin-left: -65px;
+    }
+    .category .mynav p {
+        height: .8rem;
+        border-bottom: .1rem solid #dddddd;
+    }
+    .category .mainport {
+        width: 73.5%;
+        height: 100%;
+        background: #fff;
+        position:absolute;
+        right:0;
+        padding: 0.21rem .2rem 0 .2rem;
+        margin-bottom: 0;
+        border-bottom: none;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+    }
+    .mainport-left {
+        width: 26.5%;
+        height: 100%;
+        position:fixed;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+        background: #ececec;
+        display: inline-block;
+        overflow-y: scroll;
+    }
+    .mainport-left li {
+        height: 1.02rem;
+        border-bottom: .02rem solid #ddd;
+        text-align: center;
+        line-height: 1.02rem;
+        font-size: .23rem;
+        color: #4d4d4d;
+    }
+    .categoryFirst li span {
+        display: none;
+    }
+    .mainport-left .active {
+        background: #fff;
+        border: none;
+        width: 101%;
+        color:red;
+    }
+    .banner,.banner img {
+        width: 100%;
+        height: 1.5rem;
+    }
+
+
+    .mainport-right h3 {
+        width: 100%;
+        height: .6rem;
+        line-height: .6rem;
+        color: #b4b4b4;
+    }
+    .mainFigure img {
+        display: inline;
+        width: 100%;
+        height: 1.97rem;
+        overflow: hidden;
+    }
+    .goods-list li {
+        width: 47%;
+        display: inline-block;
+        margin: 1% 1% 0;
+    }
+    .goods-title strong {
+        width: 100%;
+        height: 100%;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: .4rem;
+        font-weight: normal;
+        text-align: center;
+        color:#000;
+    }
+    .goods-title span {
+        display: none;
+    }
+
+}
