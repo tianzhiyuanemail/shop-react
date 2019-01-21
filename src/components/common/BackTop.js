@@ -13,9 +13,6 @@ class BackTop extends React.Component {
         window.onscroll = function () {
             // 变量t就是滚动条滚动时，到顶部的距离
             const t = document.documentElement.scrollTop || document.body.scrollTop;
-            // const s = document.getElementById("root").clientHeight;
-            const s = document.body.scrollHeight ;
-            console.info(t+"======="+s)
             const top_view = document.getElementById('top_view');
             if (top_view !== null) {
                 top_view.style.display = t >= 100 ? 'block' : 'none';

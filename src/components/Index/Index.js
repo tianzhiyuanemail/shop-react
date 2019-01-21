@@ -19,19 +19,10 @@ class Index extends React.Component{
     }
     componentDidMount() {
 
-
     }
-
-
-
     render(){
-
-
-
-
         return(
             <div className={"Index"}>
-
                 <IndexItemList></IndexItemList>
                 <BackTop></BackTop>
                 <FootTabBar></FootTabBar>
