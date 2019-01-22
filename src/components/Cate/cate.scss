@@ -1,155 +1,218 @@
 .CateIndex{
-    .am-navbar {
-        height: 40px;
-        background-color: #fb5d84;
-    }
 
+    #contentbox {
+        height: 100%;
+        background-color: #fff;
+    }
+    .menu {
+        position: fixed;
+        top: 50px;
+        bottom: 0;
+        width: 5.25rem;
+        text-align: center;
+        background-color: #f8f8f8;
+        .menuItem {
+            height: 45px;
+            width: 100%;
+            font-size: 15px;
+            line-height: 45px;
+            box-sizing: border-box;
+            cursor: pointer;
+            &.selected {
+                color: #169ada;
+                background-color: #fff;
+            }
+        }
+    }
+    .categoryBox {
+        margin-left: 6.25rem;
+        width: 13rem;
+        height: 99.9%;
+        overflow: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        .categoryContent {
+            .categoryList {
+                clear: both;
+                overflow: hidden;
+                text-align: center;
+                padding-bottom: 20px;
+                &:last-child {
+                    padding-bottom: 300px;
+                }
+                &.first {
+                    padding-top: 50px;
+                }
+                .title {
+                    position: relative;
+                    width: 90%;
+                    margin: 0 5%;
+                    font-size: 14px;
+                    color: #424242;
+                    line-height: 40px;
+                    text-align: left;
+                    text-indent: 7px;
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 13px;
+                        width: 3px;
+                        height: 14px;
+                        background-color: #169ada;
+                    }
+                    .all {
+                        float: right;
+                        position: relative;
+                        color: #b4b4b4;
+                        padding-right: 12px;
+                        font-size: 12px;
+                        &:after {
+                            position: absolute;
+                            content: "\E629";
+                            font-family: "wptFont";
+                            width: 10px;
+                            right: 0;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .categoryBox {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    .categoryItem {
+                        float: left;
+                        height: 30px;
+                        line-height: 30px;
+                        width: 23.33%;
+                        padding: 70px 5% 5px;
+                        background-size: 63px;
+                        background-repeat: no-repeat;
+                        background-position: center 5px;
+                        padding: 38px 5% 18px;
+                        .itemIcon {
+                            position: absolute;
+                            top: 5px;
+                            left: 50%;
+                            width: 64px;
+                            height: 64px;
+                            color: #f56300;
+                            font-size: 14px;
+                            cursor: pointer;
+                            line-height: 45px;
+                            margin-left: -32px;
+                            text-align: center;
+                            background-color: #f4f4f4;
 
-    .row,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,aside,figure,figcaption,blockquote,th,td,a
-    {
-        margin: 0;
-        padding: 0;
-        outline:none;
-        font-family:"Microsoft YaHei";
+                        }
+                        &:nth-child(3) {
+                            .itemIcon {
+                                color: #169ada;
+                            }
+                        }
+                        &:nth-child(4) {
+                            .itemIcon {
+                                color: #f4ce14;
+                                font-size: 28px;
+                            }
+                        }
+                        .text {
+                            position: absolute;
+                            left: 50%;
+                            width: 64px;
+                            cursor: pointer;
+                            margin-left: -32px;
+                        }
+                    }
+                    &:before {
+                        position: absolute;
+                        left: 5%;
+                        bottom: 0;
+                        content: '';
+                        width: 90%;
+                        height: 1px;
+                        background-color: #eee;
+                        transform: scaleY(0.5);
+                        -webkit-transform: scaleY(0.5);
+                    }
+                }
+                .categoryItem {
+                    position: relative;
+                    float: left;
+                    height: 100px;
+                    line-height: 100px;
+                    width: 33.33%;
+                    padding: 0 0 5px;
+                    .categoryIcon {
+                        position: relative;
+                        background-size: 63px;
+                        background-repeat: no-repeat;
+                        background-position: center 5px;
+                        width: 100%;
+                        height: 70px;
+                        img {
+                            border-style: none;
+                            width: 4rem;
+                        }
+                    }
+                    .cursorArea {
+                        position: absolute;
+                        top: 5px;
+                        left: 50%;
+                        width: 64px;
+                        height: 64px;
+                        cursor: pointer;
+                        overflow: hidden;
+                        margin-left: -32px;
+                        .new {
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            width: 74px;
+                            color: #fff;
+                            height: 18px;
+                            font-size: 20px;
+                            line-height: 14px;
+                            margin-left: -60px;
+                            background-color: #e01f0b;
+                            transform: rotate(-45deg) scale(0.5);
+                            -webkit-transform: rotate(-45deg) scale(0.5);
+                        }
+                    }
+                    &.clicked {
+                        opacity: 0.7;
+                    }
+                    .text {
+                        height: 20px;
+                        line-height: 20px;
+                        margin: 5px 0;
+                        overflow: hidden;
+                        font-size: 14px;
+                        display: block;
+                    }
+                    &.official {
+                        clear: left;
+                        width: 90%;
+                        margin: 5px 5%;
+                        height: auto;
+                        padding: 37.6% 0 0;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+            }
+        }
     }
-    input[type=radio]{margin: 0;}
-    h1,h2,h3,h4,h5,h6,label {
-        font-weight: normal;
-    }
-    ul {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-        color: #000;
-    }
-    /*strong{font-weight: normal;}*/
-    body {
-        background: #ececec;
-    }
-    .font21 {
-        font-size: .21rem;
-    }
-    .font17 {
-        font-size: .17rem;
-    }
-    .font19 {
-        font-size: .19rem;
-    }
-    .font23 {
-        font-size: .23rem;
-    }
-    .font24 {
-        font-size: .24rem;
-    }
-    .font25 {
-        font-size: .25rem;
-    }
-    .font26 {
-        font-size: .26rem;
-    }
-    .font28 {
-        font-size: .28rem;
-    }
-    .padding20 {
-        padding: 0 .2rem 0 .2rem
-    }
-    .fff {
-        background: #fff;
-    }
-    .color-a1 {
-        color: #a1a1a1;
-    }
-    .color-4d {
-        color: #4d4d4d;
-    }
-    /*category页面*/
-    .category .waitarea canvas{     /* 加载小圆圈 */
+    .wptAbMask {
         position: absolute;
-        left: 50%;
-        margin-left: -65px;
-    }
-    .category .mynav p {
-        height: .8rem;
-        border-bottom: .1rem solid #dddddd;
-    }
-    .category .mainport {
-        width: 73.5%;
         height: 100%;
-        background: #fff;
-        position:absolute;
-        right:0;
-        padding: 0.21rem .2rem 0 .2rem;
-        margin-bottom: 0;
-        border-bottom: none;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        overflow-scrolling: touch;
-    }
-    .mainport-left {
-        width: 26.5%;
-        height: 100%;
-        position:fixed;
-        -webkit-overflow-scrolling: touch;
-        overflow-scrolling: touch;
-        background: #ececec;
-        display: inline-block;
-        overflow-y: scroll;
-    }
-    .mainport-left li {
-        height: 1.02rem;
-        border-bottom: .02rem solid #ddd;
-        text-align: center;
-        line-height: 1.02rem;
-        font-size: .23rem;
-        color: #4d4d4d;
-    }
-    .categoryFirst li span {
-        display: none;
-    }
-    .mainport-left .active {
-        background: #fff;
-        border: none;
-        width: 101%;
-        color:red;
-    }
-    .banner,.banner img {
         width: 100%;
-        height: 1.5rem;
+        top: 0;
+        bottom: 0;
+        z-index: 99995;
+        background-color: #fff;
     }
 
-
-    .mainport-right h3 {
-        width: 100%;
-        height: .6rem;
-        line-height: .6rem;
-        color: #b4b4b4;
-    }
-    .mainFigure img {
-        display: inline;
-        width: 100%;
-        height: 1.97rem;
-        overflow: hidden;
-    }
-    .goods-list li {
-        width: 47%;
-        display: inline-block;
-        margin: 1% 1% 0;
-    }
-    .goods-title strong {
-        width: 100%;
-        height: 100%;
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        line-height: .4rem;
-        font-weight: normal;
-        text-align: center;
-        color:#000;
-    }
-    .goods-title span {
-        display: none;
-    }
 
 }
