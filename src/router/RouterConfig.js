@@ -11,6 +11,7 @@ const RouterConfig = () => (
         <Redirect exact from="/" to="/index"/>
         <Route exact path='/index' component={Index} />
         <Route exact path='/cate' component={CateIndex} />
+        <Route exact path='/cateItemList' component={CateItemList} />
         <Route exact path='/cateItemList/:cateId/:cateName' component={CateItemList} />
         {/*<Route exact path='/item/:productId' component={ItemIndex} />*/}
         {/*<Route exact path='/9' component={NineIndex}/>*/}
